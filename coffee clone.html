@@ -3,127 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffee clone page</title>
+    <title>Coffee Clone Page</title>
+
     <style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:20px;
-    background-color: rgb(236, 233, 233);
-}
-.card{
-    display:grid;
-    grid-template-columns:  repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    padding: 20px;
-    gap: 20px;
-    justify-content: center;
-    
-}
-.box{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 lightgray;
-    padding: 20px;
-    
-}
-.box .box-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.box h3{
-    text-align: left;
-    color:  balck;
-}
-.box p{
-    color: gray;
-}
-.box .price{
-    text-align: right;
-    color:  goldenrod;
-    font-weight: bold;
-    font-size: large;
-     display: flex;
-  
-}
-@media(max-width:600px){
-    .card{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(9,1fr);
-    }
-}
-@media(max-width:900px){
-    .card{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,1fr);
-    }
-}
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding:20px;
+            background-color: rgb(236, 233, 233);
+        }
+
+        .card{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box{
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 lightgray;
+            padding: 20px;
+        }
+
+        .box-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box h3{
+            color: black;
+            margin: 0;
+        }
+
+        .box p{
+            color: gray;
+        }
+
+        .price{
+            color: goldenrod;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        /* Responsive - Mobile */
+        @media(max-width:600px){
+            .card{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tablet */
+        @media(max-width:900px){
+            .card{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class ="card">
-        <div class="box">
-            <div class="box-header">
-            <h3> Cappuccino</h3>
-            <span class="price">$49 </span>
-            </div>
-            <p>Usage of the internet is becoming more common due to rapid advance.</p>
-        </div>
-        <div class="box">
-            <div class="box-header">
-            <h3> Americano</h3>
-            <span class="price">$49 </span>
-            </div>
-            <p>Usage of the internet is becoming more common due to rapid advance.</p>
-        </div>
-        <div class="box">
-            <div class="box-header">
-            <h3> Expresso</h3>
-             <span class="price">$49 </span>
-            </div>
-            <p>Usage of the internet is becoming more common due to rapid advance.</p>
-        </div>
-        <div class="box">
-            <div class="box-header">
-            <h3> Macchiato</h3>
-            <span class="price">$49 </span>
 
-            </div>
-            <p>Usage of the internet is becoming more common due to rapid advance.</p>
-        </div>
-        <div class="box">
-            <div
-            <h3> Mocha</h3>
-             <span class="price">$49 </span>
-            </div>
-            <p>Usage of the internet is becoming more common due to rapid advance.</p>
-        </div>
-        <div class="box">
-            <h3> Coffee Latte</h3>
-             <span class="price">$49 </span>
-            <p>Usage of the internet is becoming more common due to rapid advance.</p>
-        </div>
+    <div class="card">
+
         <div class="box">
             <div class="box-header">
-            <h3> piccolo Latte</h3>
-             <span class="price">$49 </span>
+                <h3>Cappuccino</h3>
+                <span class="price">$49</span>
             </div>
             <p>Usage of the internet is becoming more common due to rapid advance.</p>
         </div>
+
         <div class="box">
             <div class="box-header">
-            <h3> Ristretto</h3>
-             <span class="price">$49 </span>
+                <h3>Americano</h3>
+                <span class="price">$49</span>
             </div>
             <p>Usage of the internet is becoming more common due to rapid advance.</p>
         </div>
+
         <div class="box">
             <div class="box-header">
-            <h3> Affogato</h3>
-             <span class="price">$49 </span>
+                <h3>Expresso</h3>
+                <span class="price">$49</span>
             </div>
             <p>Usage of the internet is becoming more common due to rapid advance.</p>
         </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3>Macchiato</h3>
+                <span class="price">$49</span>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3>Mocha</h3>
+                <span class="price">$49</span>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3>Coffee Latte</h3>
+                <span class="price">$49</span>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3>Piccolo Latte</h3>
+                <span class="price">$49</span>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3>Ristretto</h3>
+                <span class="price">$49</span>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3>Affogato</h3>
+                <span class="price">$49</span>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+
     </div>
-    
+
 </body>
 </html>
